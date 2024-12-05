@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEET Life: Portfolio Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <!-- Stats Bar -->
+        <div id="stats-bar">
+            <div class="stat" id="portfolio-value">
+                <div class="stat-label">Portfolio</div>
+                <div class="stat-value">$1000</div>
+            </div>
+            <div class="stat" id="gbp-display">
+                <div class="stat-label">Good Boy Points</div>
+                <div class="stat-value">100 GBP</div>
+            </div>
+            <div class="stat" id="mental-health">
+                <div class="stat-label">Mental Health</div>
+                <div class="stat-value">100%</div>
+            </div>
+            <div class="stat" id="mom-patience">
+                <div class="stat-label">Mom's Patience</div>
+                <div class="stat-value">100%</div>
+            </div>
+        </div>
+
+        <!-- Main Game Area -->
+        <div id="game-area" class="hidden">
+            <!-- Left Panel - Waifu -->
+            <div id="left-panel">
+                <div id="main-waifu">
+                    <img id="waifu-avatar" src="https://waifu.now.sh/sfw" alt="Your Trading Waifu">
+                    <div id="waifu-dialogue">Notice me, senpai!</div>
+                </div>
+                <div id="action-buttons">
+                    <button id="shower-btn" class="action-btn">>take shower (5 GBP)</button>
+                    <button id="tendies-btn" class="action-btn">>eat tendies (10 GBP)</button>
+                    <button id="apartment-btn" class="action-btn hidden">>buy apartment ($200k)</button>
+                </div>
+            </div>
+
+            <!-- Trading Panel -->
+            <div id="trading-panel">
+                <div id="chart-container">
+                    <canvas id="price-chart"></canvas>
+                </div>
+                <div id="trading-controls">
+                    <div class="top-controls">
+                        <select id="coin-selector">
+                            <option value="NEET">NEET/USD</option>
+                            <option value="TENDIE">TENDIE/USD</option>
+                            <option value="WAGIES">WAGIES/USD</option>
+                            <option value="PEPE">PEPE/USD</option>
+                        </select>
+                        <div id="current-price">Current Price: <span>$0</span></div>
+                    </div>
+                    <div class="trade-input">
+                        <input type="number" id="trade-amount" placeholder="Amount">
+                        <span class="leverage-text">125x LEVERAGE ENABLED</span>
+                    </div>
+                    <div class="trade-buttons">
+                        <button id="buy-btn" class="green-btn">>buy</button>
+                        <button id="sell-btn" class="red-btn">>dump</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel -->
+            <div id="right-panel">
+                <div id="stats-display">
+                    <div class="stat" id="holdings-display">
+                        <div class="stat-label">Holdings</div>
+                        <div class="holdings-list">>no bags yet anon</div>
+                    </div>
+                    <div class="stat" id="portfolio-value">
+                        <div class="stat-label">Portfolio</div>
+                        <div class="stat-value">$1000</div>
+                    </div>
+                </div>
+                <div id="social-links">
+                    <button class="social-btn discord-btn">/biz/</button>
+                    <button class="social-btn twitter-btn">CT</button>
+                </div>
+                <div id="notifications">
+                    <div class="notification-title">>latest fud</div>
+                    <div id="notification-list"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flying Waifus Container -->
+        <div id="flying-waifus"></div>
+
+        <!-- Start Screen -->
+        <div id="start-screen">
+            <h1>NEET Life: Portfolio Manager</h1>
+            <div class="tutorial-grid">
+                <div class="tutorial-item">
+                    <h3>>trading</h3>
+                    <p>Trade shitcoins with 125x leverage. What could go wrong?</p>
+                </div>
+                <div class="tutorial-item">
+                    <h3>>mental health</h3>
+                    <p>Don't let your mental health drop to zero or it's back to wagecucking.</p>
+                </div>
+                <div class="tutorial-item">
+                    <h3>>good boy points</h3>
+                    <p>Earn GBP for tendies and showers. Keep mom happy!</p>
+                </div>
+                <div class="tutorial-item">
+                    <h3>>victory</h3>
+                    <p>Get $200k to buy an apartment and achieve NEET independence!</p>
+                </div>
+            </div>
+            <button id="start-btn" class="green-btn">>start trading</button>
+        </div>
+
+        <!-- Action Panel -->
+        <div id="action-panel">
+            <div id="news-feed">
+                <div class="feed-title"> Diamond Hands News Network</div>
+                <div id="news-items"></div>
+            </div>
+            <div id="actions">
+                <button class="action-btn" id="reddit-dd">
+                    <i class="fab fa-reddit"></i> Check Reddit DD
+                </button>
+                <button class="action-btn" id="biz-advice">
+                    <i class="fas fa-mask"></i> Visit /biz/
+                </button>
+                <button class="action-btn" id="discord-check">
+                    <i class="fab fa-discord"></i> Discord Alpha
+                </button>
+                <button class="action-btn" id="twitter-scan">
+                    <i class="fab fa-twitter"></i> Elon's Tweets
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

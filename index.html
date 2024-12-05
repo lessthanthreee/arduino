@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RefurbishedTech Columbus - Quality Refurbished PCs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+<body>
+    <canvas id="particles"></canvas>
+    <div class="blob" style="top: 20%; left: 10%;"></div>
+    <div class="blob" style="top: 60%; right: 10%;"></div>
+    <header>
+        <nav>
+            <div class="logo animate__animated animate__fadeIn">
+                <h1>RefurbishedTech</h1>
+                <span class="location">Columbus, Ohio</span>
+            </div>
+            <ul class="animate__animated animate__fadeIn">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#inventory">Inventory</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content animate__animated animate__fadeIn">
+                <h2>Columbus's Premier Refurbished PC Store</h2>
+                <p>High-quality, professionally refurbished computers at unbeatable prices</p>
+                <a href="#inventory" class="cta-button">View Our PCs</a>
+            </div>
+        </section>
+
+        <section id="inventory" class="inventory">
+            <h2 data-aos="fade-up">Current Inventory</h2>
+            <div class="pc-grid">
+                <div class="pc-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVza3RvcCUyMGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Refurbished Desktop PC">
+                    <h3>Office Pro</h3>
+                    <p>Intel i5, 16GB RAM, 512GB SSD</p>
+                    <span class="price">$299</span>
+                    <div class="specs">
+                        <span><i class="fas fa-microchip"></i> Intel i5</span>
+                        <span><i class="fas fa-memory"></i> 16GB RAM</span>
+                        <span><i class="fas fa-hdd"></i> 512GB SSD</span>
+                    </div>
+                    <button class="inquire-btn">Inquire Now</button>
+                </div>
+                <div class="pc-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z2FtaW5nJTIwcGN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" alt="Gaming Refurbished PC">
+                    <h3>Gaming Rig</h3>
+                    <p>AMD Ryzen 7, 32GB RAM, RTX 3060</p>
+                    <span class="price">$599</span>
+                    <div class="specs">
+                        <span><i class="fas fa-microchip"></i> Ryzen 7</span>
+                        <span><i class="fas fa-memory"></i> 32GB RAM</span>
+                        <span><i class="fas fa-gamepad"></i> RTX 3060</span>
+                    </div>
+                    <button class="inquire-btn">Inquire Now</button>
+                </div>
+                <div class="pc-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1589561084283-930aa7b1ce50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29tcGFjdCUyMHBjfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Compact Refurbished PC">
+                    <h3>Compact Powerhouse</h3>
+                    <p>Intel i3, 8GB RAM, 256GB SSD</p>
+                    <span class="price">$199</span>
+                    <div class="specs">
+                        <span><i class="fas fa-microchip"></i> Intel i3</span>
+                        <span><i class="fas fa-memory"></i> 8GB RAM</span>
+                        <span><i class="fas fa-hdd"></i> 256GB SSD</span>
+                    </div>
+                    <button class="inquire-btn">Inquire Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2 data-aos="fade-up">Why Choose Us?</h2>
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-tools"></i>
+                    <h3>Professionally Refurbished</h3>
+                    <p>Each PC is thoroughly tested and restored to like-new condition by our expert technicians in Columbus</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>90-Day Warranty</h3>
+                    <p>Peace of mind with our comprehensive warranty and local support</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Best Value in Ohio</h3>
+                    <p>Save up to 70% compared to buying new, with local pickup available</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 data-aos="fade-up">Contact Us</h2>
+            <div class="contact-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-info">
+                    <h3>Visit Our Store</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 High Street</p>
+                    <p>Columbus, OH 43215</p>
+                    <p><i class="fas fa-phone"></i> (614) 555-0123</p>
+                    <p><i class="fas fa-envelope"></i> info@refurbishedtech.com</p>
+                    <div class="hours">
+                        <h4>Store Hours</h4>
+                        <p>Monday - Friday: 9AM - 6PM</p>
+                        <p>Saturday: 10AM - 4PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p> 2023 RefurbishedTech Columbus. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>
